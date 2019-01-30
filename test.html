@@ -10,6 +10,7 @@
       var _dsst = {};
     </script>
     <script src="./log.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 
 <body>
@@ -17,7 +18,10 @@
     <script>
     _dsst.action({
         actiontype: 'test'
-    })
+    });
+    axios.post('https://ds.service.163.org/fe_api?appkey=f1cc4f3e-23a0-11e9-8058-246e96613a20', {
+    actiontype: 'testapi'
+  })
     </script>
 </body>
 
